@@ -1,0 +1,5 @@
+__test__/testFiles
+__test__/testFilesCopy
+node_modules
+package-lock.json
+yarn.lock
