@@ -1,6 +1,7 @@
-__test__/testFiles
-__test__/testFilesCopy
+__test__
 node_modules
 src
 package-lock.json
 yarn.lock
+tsconfig.json
+jest.config.ts

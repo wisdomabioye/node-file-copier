@@ -1,15 +1,16 @@
 {
-  "name": "file-copier",
+  "name": "node-file-copier",
   "version": "1.0.0",
   "description": "NodeJS File and Folder copier",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "npx tsc ./src/index.ts --skipLibCheck --outDir ./dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wisdomabioye/node-copier.git"
+    "url": "git+https://github.com/wisdomabioye/node-file-copier.git"
   },
   "keywords": [
     "file",
@@ -20,9 +21,9 @@
   "author": "@wisdomabioye",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wisdomabioye/node-copier/issues"
+    "url": "https://github.com/wisdomabioye/node-file-copier/issues"
   },
-  "homepage": "https://github.com/wisdomabioye/node-copier#readme",
+  "homepage": "https://github.com/wisdomabioye/node-file-copier#readme",
   "devDependencies": {
     "@types/node": "^20.9.0",
     "jest": "^29.7.0",

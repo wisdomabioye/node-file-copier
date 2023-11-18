@@ -1,4 +1,4 @@
-### File Copier
+### Node File Copier
 
 A simple and flexible Node.js utility for synchronously copying files and folders. This utility allows you to queue up copying tasks and execute them in a batch, making it easy to handle multiple file and folder copies in your Node.js applications.
 Good for copying small files, async copier will be added soon.
@@ -6,20 +6,20 @@ Good for copying small files, async copier will be added soon.
 ### Installation
 
 ```bash
-npm install file-copier
+npm install node-file-copier
 ```
 
 #### Usage
 
 ```javascript
-import { FileCopierSync } from 'file-copier';
+import { FileCopierSync } from 'node-file-copier';
 
 // Create a new instance of FileCopierSync
 const fileCopier = new FileCopierSync();
 
 // Queue up copy tasks
 fileCopier
-  .queue('path/to/source/file.txt', 'path/to/destination/')
+  .queue(path.join(__dirname, 'file.txt'), 'path/to/destination/')
   .queue('path/to/source/folder/', 'path/to/destination/folder/');
 
 // Execute the copy tasks
