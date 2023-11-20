@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "npx tsc ./src/index.ts --skipLibCheck --outDir ./dist"
+    "build": "npx tsc ./src/index.ts --skipLibCheck --outDir ./dist --declaration true"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,10 @@
     "file",
     "folder",
     "copier",
-    "nodejs"
+    "nodejs",
+    "copy",
+    "copy file",
+    "copy folder"
   ],
   "author": "@wisdomabioye",
   "license": "MIT",
